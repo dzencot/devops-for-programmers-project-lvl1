@@ -4,8 +4,8 @@ WORKDIR /app
 
 RUN npm install --global @nodosjs/cli@0.0.55
 
-COPY . /app
+# COPY . /app
 
-RUN npm install
+# RUN npm install
 
 # RUN nodos server -h 0.0.0.0
