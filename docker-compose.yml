@@ -7,5 +7,5 @@ services:
     build: .
     command: 'npm test'
     # command: 'nodos server -h 0.0.0.0'
-    volumes:
-      - .:/app
+    # volumes:
+    #   - .:/app
