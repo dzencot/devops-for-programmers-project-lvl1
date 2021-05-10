@@ -1,6 +1,9 @@
 server:
 	npx nodos server
 
+lint:
+	npm run lint
+
 test:
 	npm -s test
 
