@@ -7,3 +7,11 @@ services:
       - 8080:8080
     volumes:
       - .:/app
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
