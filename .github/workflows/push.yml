@@ -34,7 +34,7 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile.production
-          tags: user/app:latest
+          tags: dzencot/devops-for-programmers-project-lvl1:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
