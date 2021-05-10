@@ -27,8 +27,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Test
-        run: make compose-build
+        name: Install
+        run: make install
+      -
+        name: Lint & tests
+        run: make lint && test
       -
         name: Build and push
         id: docker_build
