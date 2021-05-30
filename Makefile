@@ -11,10 +11,10 @@ test:
 	npm -s test
 
 compose-dev:
-	docker-compose up
+	docker-compose -f docker-compose.yml -f docker-compose.override.yml up
 
 compose-prod:
-	docker-compose -f docker-compose.yml -f docker-compose.prod.yml up
+	docker-compose -f docker-compose.yml up
 
 compose-build:
 	docker-compose build
