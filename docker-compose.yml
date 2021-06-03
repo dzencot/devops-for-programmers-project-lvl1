@@ -12,7 +12,7 @@ services:
       - db
 
   db:
-    image: postgres:latest
+    image: postgres:13.3
     environment:
       POSTGRES_PASSWORD: '${NODOS_DB_USERNAME}'
       POSTGRES_USER: '${NODOS_DB_PASSWORD}'
