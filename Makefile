@@ -11,6 +11,7 @@ test:
 	npm -s test
 
 compose-dev:
+	cp -n .env.example .env
 	docker-compose -f docker-compose.yml -f docker-compose.override.yml up
 
 compose-prod:
